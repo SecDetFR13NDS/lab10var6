@@ -1,0 +1,10 @@
+import re
+f1 = open('story.txt', 'r')
+s = f1.read()
+k=count_vowels = len(re.findall(r'[aeuioy]', s, re.IGNORECASE))
+k1=count_consonants = len(re.findall(r'[bsdfghjklmnpqrtvwxz]', s, re.IGNORECASE))
+k2=count_consonants = len(re.findall(r'[0123456789]', s, re.IGNORECASE))
+print(k)
+print(k1)
+print(k2)
+f1.close()
